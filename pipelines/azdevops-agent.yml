@@ -2,15 +2,15 @@ name: Deploy AzDevOps agent on Azure Container Apps
 
 variables:
   # Replace the Variable group name with your own value
-  - group: <az-devops-library-variable-group>
+  - group: azdevops-agent-aca
 
   # Replace the variables with your own values
   - name: azureServiceConnection
-    value: <service-connection>
+    value: ASvcConn
   - name: resourceGroupName
-    value: <resource-group>
+    value: rg-aca-devops
   - name: location
-    value: '<region>'
+    value: 'northeurope'
     
   - name: templateFile
     value: './environment/azdevops-agent/main.bicep'
